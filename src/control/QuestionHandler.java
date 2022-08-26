@@ -11,7 +11,7 @@ public class QuestionHandler {
         createAllLevels();
     }
 
-    public String[] getRandomQuestions(int level){
+    public String[] getRandomQuestion(int level){
         String[] output = new String[6];
 
         Question q = allLevelQuestions[level].getRandomQuestion();

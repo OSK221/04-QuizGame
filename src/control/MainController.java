@@ -30,7 +30,7 @@ public class MainController {
     //TODO Auslesen des Spieldatums+Uhrzeit hinzufügen
 
     public String[] getQuestionAndAnswers(){
-        String[] question = questionHandler.getRandomQuestions(getPlayerLevel());
+        String[] question = questionHandler.getRandomQuestion(getPlayerLevel());
 
         String[] output = new String[5];
         output[0] = question[0];

@@ -25,6 +25,10 @@ public class MainController {
         return player.getLevel();
     }
 
+    public int getPlayerPoints(){
+        return player.getPoints();
+    }
+
     //TODO Schreiben und Lesen der Spielerpunkte hinzufügen
 
     //TODO Auslesen des Spieldatums+Uhrzeit hinzufügen

@@ -6,6 +6,7 @@ public class Player {
 
     private String name;
     private int level;
+    private int points;
 
     public Player(String name){
         this.name = name;
@@ -21,6 +22,11 @@ public class Player {
     }
 
     public void setLevel(int newLevel){
+        points += level;
         level = newLevel;
+    }
+
+    public int getPoints() {
+        return points;
     }
 }

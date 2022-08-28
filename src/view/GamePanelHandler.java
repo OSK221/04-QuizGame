@@ -10,6 +10,7 @@ public class GamePanelHandler {
     private JPanel panel;
     private JLabel playerName;
     private JLabel playerLevel;
+    private JLabel playerPoints;
     private JTextArea questionArea;
     private JButton answerA;
     private JButton answerB;
@@ -66,6 +67,9 @@ public class GamePanelHandler {
      * Die Informationen werden an die passenden Stellen im Panel geschrieben.
      */
     public void updateQuestionAndAnswers(){
+
+        playerPoints.setText("" + mainController.getPlayerPoints());
+
         String[] qA = mainController.getQuestionAndAnswers();
         questionArea.setText(qA[0]);
         answerA.setText(qA[1]);

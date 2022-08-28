@@ -14,6 +14,8 @@ public class QuestionHandler {
     public String[] getRandomQuestion(int level){
         String[] output = new String[6];
 
+        if(level >= allLevelQuestions.length) level = allLevelQuestions.length - 1;
+
         Question q = allLevelQuestions[level-1].getRandomQuestion();
         output[0] = q.getQuestion();
         output[1] = q.getAnswers()[0];
